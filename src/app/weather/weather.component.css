@@ -1,0 +1,92 @@
+
+.main-container{
+    height:100vh;
+     
+    background-size: cover;
+  
+}
+.sub-container{
+    display: block;
+    text-align: center;
+
+   
+}
+.searchBar-container{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+.searchBar{
+    
+    outline: none;
+    border: none;
+    width:18rem;
+    height:1.5rem;
+    padding:10px;
+    border-bottom-left-radius: 15px;
+    background-color: rgba(255,255,255, .6);
+    box-shadow:  2px 3.5px 5px rgba(100, 100,100, .2);
+}
+.searchBar:focus{
+    background-color: rgba(255,255,255,.88);
+}
+       
+.search-button{
+     
+    padding:.9rem;
+    outline: none;
+    border: none;
+    width:4rem;
+    border-bottom-right-radius: 15px;
+    background-color: rgb(204, 159, 35);
+    color: white;
+}
+.search-button:hover{
+    background-color: rgb(185, 125, 13);
+    
+}
+
+.location-Date-container{
+    margin-top: 5rem;
+    color:black;
+    font-size: large;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+}
+.temperature-container{
+
+    height: 5rem;
+    background-color:rgba(255,255,255, .4);
+    width:9rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 2.5px 5px rgba(100,100,100,.2);
+   font-size: 2.5rem;
+   text-shadow: 2.5px 4.5px rgba(100,100,100,.1.5);
+}
+
+/*classes for changing background*/
+
+.warm{
+    background-image: url('https://img.freepik.com/vector-premium/clima-caluroso-dia-verano-caracter-hombre-infeliz-cansado-ilustracion-dibujos-animados-desierto_133260-1218.jpg?w=2000');
+}
+.haze{
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/006/326/661/small/pathway-through-dark-forest-illustration-with-moonlight-vector.jpg');
+}
+ .clouds{
+    background-image: url('https://i.pinimg.com/736x/03/25/07/0325078110ed1fcbce87b5d21db5b7bd--google-weather-icons.jpg');
+ }
+ .clear{
+    background-image: url('https://thumbs.dreamstime.com/b/landscape-background-green-tree-bushes-sunny-weather-horizontal-banner-vector-cartoon-illustration-155248749.jpg');
+ }
+ .mist{
+    background-image: url('https://img.freepik.com/free-vector/summer-landscape-with-car-road-lake-mountains-fog-vector-cartoon-illustration-foggy-weather-sea-river-shore-with-white-rocks-grass-asphalt-highway-with-sign-fencing_107791-10515.jpg?w=2000');
+ }
