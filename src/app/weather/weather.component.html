@@ -1,31 +1,26 @@
- <div [ngClass]="{warm:seasons=='Warm',clouds:seasons=='Clouds',
+<div [ngClass]="{warm:seasons=='Warm',clouds:seasons=='Clouds',
                   clear:seasons=='Clear',haze:seasons=='Haze',
-                  mist:seasons=='Mist'}"
-                  class="main-container">
+                  mist:seasons=='Mist'}" class="main-container">
   <div class="sub-container">
-    <div class="searchBar-container">   
-        <input type="text" class="searchBar"
-          #input
-         placeholder="Search.." (keydown.enter)="getUserInputs(input.value)"> 
-         <button (click)="getUserInputs(input.value)" class="search-button">Go</button>
+    <div class="searchBar-container">
+      <input type="text" class="searchBar" #input placeholder="Search.." (keydown.enter)="getUserInputs(input.value)">
+      <button (click)="getUserInputs(input.value)" class="search-button">Go</button>
     </div>
     <div class="errorMessagecontainer" *ngIf="checkInput">
-      <p >Please Enter Valid Data</p>
+      <p>Please Enter Valid Data</p>
 
     </div>
     <div class="location-Date-container">
       <h2> {{weatherDetails?.name | titlecase}}, {{weatherDetails?.sys.country}}</h2>
     </div>
-    <div class="date container" >
+    <div class="date container">
       <i> {{day}} {{date | date:'dd MMMM yyyy'}}</i>
     </div>
-    <div class="temperature-container" >
-      {{temperature}}°c
+    <div class="temperature-container">
+      {{temperature/8 | number:'0.0-0'}}°c
     </div>
     <div class="season-container">
-       <h1>{{seasons}}</h1>
+      <h1>{{seasons}}</h1>
     </div>
   </div>
 </div>
-
- 
